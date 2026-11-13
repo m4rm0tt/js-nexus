@@ -39,12 +39,25 @@ export function countX(code) {
  * Calcule le nombre de tours complets possibles avant épuisement de l'énergie.
  */
 export function turnsBeforeEmpty(energy, consumption) {
-    
+    let a = 0;
+    while (energy >= consumption) {
+        a++;
+        energy -= consumption;
+    }
+    return a;
 }
 
 /**
  * Retourne la première ronde pour laquelle le total dépasse une limite.
  */
 export function firstRoundAbove(limit) {
-  // TODO
+    let a = 0;
+
+    for (let i = 0; i <= limit; i++) {
+        a = a + (i + 1);
+
+        if (a > limit) {
+            return i+1;
+        }
+    }
 }

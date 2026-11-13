@@ -4,21 +4,21 @@
  * Retourne le type JavaScript de la valeur.
  */
 export function valueType(value) {
-  // TODO
+    return typeof(value);
 }
 
 /**
  * Indique si la valeur est undefined.
  */
 export function isUndefined(value) {
-  // TODO
+    return (typeof value === `undefined`);
 }
 
 /**
  * Indique si la valeur est null.
  */
 export function isNull(value) {
-  // TODO
+    return (value === null);
 }
 
 /**
@@ -26,7 +26,7 @@ export function isNull(value) {
  * différente de undefined et de null.
  */
 export function hasKnownValue(value) {
-  // TODO
+    return !(typeof value === `undefined` || value === null);
 }
 
 /**
@@ -34,12 +34,12 @@ export function hasKnownValue(value) {
  * Les deux valeurs sont converties en nombres.
  */
 export function hasEnoughEnergy(energy, minimumEnergy) {
-  // TODO
+    return (Number(energy) >= Number(minimumEnergy));
 }
 
 /**
  * Compare strictement le nom de la zone attendue.
  */
 export function isCorrectZone(zone, expectedZone) {
-  // TODO
+    return (zone === expectedZone);
 }

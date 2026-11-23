@@ -15,7 +15,7 @@ export function sumRounds(numberOfRounds) {
  * Compte le nombre de caractères d'un code.
  */
 export function countSymbols(code) {
-    a = 0;
+    let a = 0;
     for(let letter of code) {
         a++;
     }

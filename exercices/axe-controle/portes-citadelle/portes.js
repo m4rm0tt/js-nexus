@@ -16,12 +16,7 @@ export function accessMessage(level) {
  * Retourne l'état textuel d'une porte.
  */
 export function doorStatus(isOpen) {
-    if (isOpen) {
-        return "Ouverte";
-    }
-    else {
-        return "Fermée";
-    }
+    return isOpen ? "Ouverte" : "Fermée";
 }
 
 /**
